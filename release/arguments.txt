@@ -1,0 +1,5 @@
+# Pre-deployment script
+-armTemplate "$(System.DefaultWorkingDirectory)/_dev-ci-cd-covid-reporting-adf/dev-ci-cd-covid-reporting-adf/ARMTemplateForFactory.json" -ResourceGroupName test-ci-cd-covid-reporting-rg -DataFactoryName test-ci-cd-covid-reporting-adf -predeployment $true -deleteDeployment $false
+
+# Post-deployment script
+-armTemplate "$(System.DefaultWorkingDirectory)/_dev-ci-cd-covid-reporting-adf/dev-ci-cd-covid-reporting-adf/ARMTemplateForFactory.json" -ResourceGroupName test-ci-cd-covid-reporting-rg -DataFactoryName test-ci-cd-covid-reporting-adf -predeployment $false -deleteDeployment $true
