@@ -14,6 +14,7 @@
 			"frequency": "Hour",
 			"interval": 24,
 			"startTime": "2023-05-24T14:13:00Z",
+			"endTime": "2023-05-25T14:21:05Z",
 			"delay": "00:00:00",
 			"maxConcurrency": 50,
 			"retryPolicy": {
