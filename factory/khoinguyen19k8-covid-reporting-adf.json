@@ -1,0 +1,9 @@
+{
+	"name": "khoinguyen19k8-covid-reporting-adf",
+	"location": "northeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ea72ebfe-bf8f-4114-aa97-cf7bcbc07bc1",
+		"tenantId": "95a2bc8a-87a4-4341-ae1f-0b01eef3b6cd"
+	}
+}
