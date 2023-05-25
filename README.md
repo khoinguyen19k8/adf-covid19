@@ -1,20 +1,14 @@
 # Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+The project utilizes Azure Data Factory to orchestrate data pipelines for Covid19 data from multiple sources. Data transformations are performed using Azure Databricks, Dataflow, and Azure HDInsight. CI/CD pipeline and releases are created using Azure Devops.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+# Architecture
+![Alt text](images/adf_architecture.png)
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# Transformation
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Data transformations logic can be found in dataflow, databricks_trans, and sql_trans for Dataflow, Azure Databricks, and Azure HDInsight, respectively.
+
+# CI/CD
+
+![Alt text](images/ci_cd_pipeline.png)
